@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <favicon href="eggylogo.png"></favicon>>
+    <title>ҮҮР товхимол</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto+Mono:wght@500&family=Roboto+Serif:wght@400&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+           <!-- <div class="logo"><img src="Untitled design (2).png"></div> -->
+            <div><img src="eggylogo.png" alt="Website Logo" class="logo"></div>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Нүүр</a></li>
+                <li><a href="#" onclick="showPage('blogs')">Нийтлэлүүд</a></li>
+                <li><a href="#" onclick="showPage('about')">Бидний тухай</a></li>
+            </ul>
+        </div>
+    </nav>  
+
+    <iframe style="border:none;" width=100% height=2500px src="https://docs.google.com/document/d/e/2PACX-1vR4QpLrwQIS2LnnQ7unWAeuK-WAkpV2OjG3PrwtSEGkY68zIjoAWioy7-7Mi1vN8ZFJ9H3T5S5ACJJp/pub"></iframe>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ҮҮР</h3>
+                    <p>Сайн дурын монгол хэл дээрх шинжлэх ухаан, технологи, урлагийн товхимол.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>БУЛАНГУУД</h3>
+                    <a href="#" onclick="showPage('home')">Нүүр</a>
+                    <a href="#" onclick="showPage('blogs')">Бичвэрүүд</a>
+                    <a href="#" onclick="showPage('about')">Бидний тухай</a>
+                </div>
+                <div class="footer-section">
+                    <h3>БИДНИЙГ ДАГААРАЙ</h3>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Email Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 он. Бүх бичвэрүүд зохиогчийн эрхээр хамгаалагдсан. Бичвэр, дүрслэлийг ашиглахдаа заавал эш татна.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function showPage(pageName) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            document.getElementById(pageName).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+</html>
